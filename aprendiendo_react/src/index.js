@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Card from './components/card'
 
 const nombre = 'Randy';
 const color = 'blue';
@@ -20,10 +21,8 @@ const jsx = (
     </div>
     : 
     <p>No has iniciado sesion</p>}
-    
   </>
 );
-
 //Esta es otra manera de hacer la validación de si la sesion es true, solo que abajo hay que poner el nombre de la función en vez de la variable jsx//
 /*
 const verificarSesion = (sesion) => {
@@ -35,4 +34,4 @@ const verificarSesion = (sesion) => {
 }
 */
 
-ReactDOM.render(jsx,document.getElementById('root'));
+ReactDOM.render(<Card/>,document.getElementById('root'));
